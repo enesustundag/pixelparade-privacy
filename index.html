@@ -1,60 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pixel Parade: Color Blast — Privacy Policy</title>
+<title>Pixel Parade: Color Blast - Privacy Policy</title>
 <style>
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: #2b2118; background: #fbf6ec; }
-  h1 { font-size: 1.7rem; margin-bottom: 0.2rem; }
-  h2 { font-size: 1.2rem; margin-top: 2rem; }
-  .muted { color: #7a6a58; font-size: 0.95rem; }
-  a { color: #b5501c; }
-  li { margin: 0.3rem 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 18px 60px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.7em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  h3 { font-size: 1.05em; margin-top: 1.4em; }
+  .muted { color: #666; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+  th, td { border: 1px solid #ddd; padding: 6px 8px; text-align: left; vertical-align: top; }
+  th { background: #f5f5f5; }
+  a { color: #3b4cca; }
 </style>
 </head>
 <body>
+
 <h1>Privacy Policy</h1>
-<p class="muted">Pixel Parade: Color Blast · Developer: Kruxgen · Last updated: November 13, 2026</p>
+<p><strong>Pixel Parade: Color Blast</strong> (the "Game") for Android and iOS<br>
+Developer: Kruxgen ("we", "us")<br>
+<span class="muted">Last updated: November 18, 2026</span></p>
 
-<p>This policy explains what information the mobile game <strong>Pixel Parade: Color Blast</strong> ("the Game") collects, why, and the choices you have. The Game does not require an account and does not ask for your name, email address, phone number, contacts, photos, location or other personal files.</p>
+<p>This policy explains what information the Game collects, why, which service providers process it, and how you can ask us to delete it. The Game requires an internet connection.</p>
 
-<h2>1. Information stored on your device</h2>
-<p>Your game progress (level, coins, lives, boosters, settings and purchases you own) is saved only on your device. A random player ID is created on first launch so that we can help you if you contact support. Uninstalling the Game deletes this data.</p>
-
-<h2>2. Information collected by third-party services</h2>
-<p>The Game uses the following Google services. They may collect device-level information as described in their own policies:</p>
+<h2>1. Summary</h2>
 <ul>
-  <li><strong>Google AdMob</strong> (advertising): advertising ID, IP address, device and app information, ad interactions. Used to show ads, measure them and prevent fraud. <a href="https://policies.google.com/technologies/ads">How Google uses data in ads</a>.</li>
-  <li><strong>Google Analytics for Firebase</strong> (analytics): app instance ID, device and app information, approximate country, and gameplay events such as level start, level win, level fail and purchases. Used to understand how the Game is played and to improve difficulty and balance. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
-  <li><strong>Firebase Remote Config</strong>: used to adjust game settings (for example rewards) without an app update.</li>
-  <li><strong>Google Play Billing</strong> (in-app purchases): payments are processed by Google Play. We never see or store your payment details. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
-</ul>
-<p>We do not sell your personal information and we do not share it with anyone other than the service providers listed above.</p>
-
-<h2>3. Consent and your choices</h2>
-<ul>
-  <li>If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalised ads are shown (Google's certified consent tool). You can change your choice at any time in <em>Settings → Privacy Settings</em>.</li>
-  <li>You can reset or delete your advertising ID or opt out of personalised ads in your Android device settings (Settings → Google → Ads / Privacy → Ads).</li>
-  <li>Rewarded ads are always optional. Purchasing "Remove Ads" removes ads shown between levels.</li>
+  <li>We do not ask for your name, email address, phone number, contacts, photos, files or precise location.</li>
+  <li>The Game creates a random player ID and a guest game account on our server so your progress can be saved to the cloud.</li>
+  <li>We use Google Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging) to understand how the Game is played, fix crashes, tune the Game and send optional notifications.</li>
+  <li>We use Google AdMob to show ads, with a consent message for users in the EEA, UK and Switzerland, and Apple's tracking permission on iOS.</li>
+  <li>Purchases are handled by Google Play or the Apple App Store. We never see your payment details.</li>
+  <li>We do not sell your personal information.</li>
+  <li>You can ask us to delete your data by email (see <a href="#delete">section 8</a>).</li>
 </ul>
 
-<h2>4. Internet connection</h2>
-<p>The Game requires an internet connection to play. This is needed to deliver ads and in-app purchases.</p>
+<h2>2. Information stored on your device</h2>
+<p>Your game progress (level, coins, lives, boosters, town, album, settings and owned purchases) is stored on your device. On first launch the Game also creates a random player ID and a random login ID. These are generated by the Game; they are not your device's hardware ID or your advertising ID. The player ID is shown in <strong>Settings</strong> (with a Copy button) so you can quote it when you contact us. Uninstalling the Game removes the data stored on your device.</p>
 
-<h2>5. Children</h2>
-<p>The Game's content is suitable for everyone, but the Game is not directed at children under 13 and we do not knowingly collect personal information from children under 13. If you believe a child has provided us information, contact us and we will help remove it.</p>
+<h2>3. Our game server (cloud save and online features)</h2>
+<p>The Game connects to our own game server at <code>nakama.struklabs.com</code>, which runs the open-source Nakama game server software on cloud infrastructure we rent. Traffic to the server passes through Cloudflare, which acts as our network provider. On first launch the Game signs in to a <strong>guest account</strong> using the random login ID; no sign-up is needed. The server stores:</p>
+<ul>
+  <li><strong>Account:</strong> your player ID, the random login ID, and, if you sign in, the link to your Google Play Games or Apple Game Center player ID (see section 4).</li>
+  <li><strong>Cloud save:</strong> a copy of your game progress, so it can be restored on a new device or after reinstalling.</li>
+  <li><strong>Pixel Arena:</strong> an automatically generated nickname (for example an adjective, an animal and a number) and your Arena score. Your nickname, rank and score are shown to the other players in your Arena group. You cannot enter a name or chat.</li>
+  <li><strong>Gifts:</strong> gifts we send to your inbox and whether you have claimed them.</li>
+  <li><strong>Performance data:</strong> device model, graphics chip, processor, memory size, screen size and refresh rate, operating system version, graphics settings, frame rate, device temperature status and memory use for your last 10 levels. We use this to find and fix slowdowns and overheating.</li>
+  <li><strong>Level updates:</strong> the Game downloads new levels from this server.</li>
+</ul>
+<p>Like any internet service, the server and Cloudflare receive your IP address when the Game connects. Only you (through the Game) and we can read your saved data.</p>
 
-<h2>6. Data retention and deletion</h2>
-<p>Game data stays on your device until you uninstall the Game. Analytics data is kept by Google Analytics for the retention period set in our Firebase project (at most 14 months). To request deletion of analytics data linked to your player ID, email us with the player ID shown in <em>Settings</em>.</p>
+<h2>4. Google Play Games and Apple Game Center</h2>
+<p>On Android the Game signs in to <strong>Google Play Games</strong>; on iOS it signs in to <strong>Apple Game Center</strong>, if you are signed in on your device. This is used only to connect your progress to your Google or Game Center account, so you get it back on a new device. Our server receives a one-time sign-in code (Android) or a signed verification message (iOS), checks it with Google or Apple, and stores only your Play Games or Game Center player ID. We do not receive your email address or contacts. Google's and Apple's own privacy policies apply to these services.</p>
 
-<h2>7. Security</h2>
-<p>Data sent to the services above is transmitted over encrypted connections (HTTPS).</p>
+<h2>5. Third-party services</h2>
+<table>
+  <tr><th>Service</th><th>What it processes</th><th>Why</th></tr>
+  <tr>
+    <td>Google Analytics for Firebase</td>
+    <td>App instance ID, our player ID, gameplay events (for example level start, win or loss, booster use, ad and purchase results, screens viewed), device and app information, approximate country/region derived from your IP address; on Android the advertising ID, and on iOS the advertising identifier (IDFA) only if you allow tracking</td>
+    <td>Understand how the Game is played, balance difficulty and economy, measure ads and purchases</td>
+  </tr>
+  <tr>
+    <td>Firebase Crashlytics</td>
+    <td>Crash and error reports (stack traces, device model, operating system, app version, device state such as memory, frame rate and temperature), Crashlytics installation ID, our player ID, the level and screen where the problem happened</td>
+    <td>Find and fix crashes, freezes and errors</td>
+  </tr>
+  <tr>
+    <td>Firebase Remote Config</td>
+    <td>Firebase installation ID, app version, device language and country</td>
+    <td>Change game settings, events and reminder texts without an app update</td>
+  </tr>
+  <tr>
+    <td>Firebase Cloud Messaging</td>
+    <td>A push notification token, Firebase installation ID, and the topics you are subscribed to (all players and your game language)</td>
+    <td>Send optional notifications such as new events or news</td>
+  </tr>
+  <tr>
+    <td>Google AdMob and Google User Messaging Platform (UMP)</td>
+    <td>Advertising ID (Android) or IDFA if you allow tracking (iOS), IP address, device and app information, ad interactions, your consent choices</td>
+    <td>Show, measure and protect ads (including fraud prevention); collect and store your consent choices</td>
+  </tr>
+  <tr>
+    <td>Google Play Billing / Apple App Store (in-app purchases)</td>
+    <td>Product, price, currency, order or transaction ID and purchase receipt</td>
+    <td>Process purchases, check that a purchase is genuine, restore owned items</td>
+  </tr>
+  <tr>
+    <td>Google Play In-App Review and In-App Updates (Android)</td>
+    <td>Handled by Google Play on your device</td>
+    <td>Show Google's rating card and update prompts</td>
+  </tr>
+</table>
+<p>Each provider processes data under its own terms and privacy policy:
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
+<a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>,
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>,
+<a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>,
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</p>
+<p>We do not sell your personal information and we do not share it with anyone other than these service providers, except where required by law.</p>
 
-<h2>8. Changes</h2>
-<p>We may update this policy. The date at the top shows the latest version. Significant changes will be announced in the Game or on its store page.</p>
+<h2>6. Notifications</h2>
+<p>Reminders (for example "your lives are full" or "your daily reward is ready") are scheduled on your device. Push notifications are sent through Firebase Cloud Messaging. The Game asks for notification permission only after you have played a few levels. You can turn notifications off at any time in the Game's <strong>Settings</strong> or in your device settings; turning them off in the Game also unsubscribes you from push topics.</p>
 
-<h2>9. Contact</h2>
-<p>Kruxgen — <a href="mailto:ugur.enes.ustundag@gmail.com">ugur.enes.ustundag@gmail.com</a></p>
+<h2>7. Your choices about ads and tracking</h2>
+<ul>
+  <li><strong>EEA, UK and Switzerland:</strong> you are asked for consent before personalized ads are shown. You can change your choice at any time in <strong>Settings &rarr; Privacy Settings</strong>. If you do not consent, ad-related data is not used for personalization and Firebase Analytics is told not to use data for advertising.</li>
+  <li><strong>iOS:</strong> the Game asks for Apple's tracking permission. If you choose "Ask App Not to Track", the IDFA is not shared with us or with AdMob. You can change this in iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking.</li>
+  <li><strong>Android:</strong> you can reset or delete your advertising ID in your device settings (Settings &rarr; Privacy &rarr; Ads, or Google &rarr; Ads).</li>
+  <li>Rewarded ads are always optional. The "No Ads" purchase removes ads shown between levels.</li>
+  <li>Ads are limited to content suitable for general audiences.</li>
+</ul>
+
+<h2 id="delete">8. Deleting your data</h2>
+<p>To ask us to delete your data, email <a href="mailto:ugur.enes.ustundag@gmail.com?subject=Pixel%20Parade%20data%20deletion%20request">ugur.enes.ustundag@gmail.com</a> with the subject "Pixel Parade data deletion request" and include your player ID from the Game's <strong>Settings</strong> screen (tap Copy next to "ID"). You can also open the email from the Game with <strong>Settings &rarr; Contact Us</strong>.</p>
+<p>Within 30 days of your request we will:</p>
+<ul>
+  <li>delete your guest game account on our server, together with your cloud save, Pixel Arena nickname and scores, gifts, performance data and the link to your Play Games or Game Center player ID;</li>
+  <li>request deletion of the analytics and crash data linked to your player ID from Google Firebase.</li>
+</ul>
+<p>We will confirm by email when this is done. After deletion your progress cannot be restored. Purchase records kept by Google Play or the Apple App Store are managed by them under their own policies, and we may keep records we are legally required to keep. Data stored on your device is removed when you uninstall the Game.</p>
+<p>You can also contact us at the same address to ask what data we hold about you, or to correct it.</p>
+
+<h2>9. How long we keep data</h2>
+<ul>
+  <li>Analytics data in Firebase: up to 14 months.</li>
+  <li>Crash reports in Crashlytics: up to 90 days.</li>
+  <li>Your game account, cloud save and performance data on our server: until you ask us to delete them.</li>
+  <li>Data held by AdMob, Google Play and Apple: according to their own policies.</li>
+</ul>
+
+<h2>10. Legal basis (EEA, UK and Switzerland)</h2>
+<p>We process data to provide the Game you asked for (cloud save, online features, purchases), for our legitimate interests in keeping the Game stable, secure and well balanced (crash reports, analytics, performance data, fraud prevention), and, for personalized ads, on the basis of your consent. You have the right to access, correct, delete or object to the processing of your data, to withdraw consent at any time, and to complain to your local data protection authority.</p>
+
+<h2>11. International transfers</h2>
+<p>Our service providers may process data in countries other than your own, including the United States. They use safeguards required by law, such as standard contractual clauses.</p>
+
+<h2>12. Security</h2>
+<p>All data sent between the Game, our server and our service providers is encrypted in transit (HTTPS). Access to our server is limited to us.</p>
+
+<h2>13. Children</h2>
+<p>The Game is not directed at children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the Game, contact us and we will delete the related data.</p>
+
+<h2>14. Changes to this policy</h2>
+<p>We may update this policy when the Game changes. The date at the top shows the latest version. Important changes will be announced in the Game or on its store page.</p>
+
+<h2>15. Contact</h2>
+<p>Kruxgen<br>
+Email: <a href="mailto:ugur.enes.ustundag@gmail.com">ugur.enes.ustundag@gmail.com</a></p>
+
 </body>
 </html>
