@@ -31,6 +31,7 @@ Developer: Kruxgen ("we", "us")<br>
   <li>The Game creates a random player ID and a guest game account on our server so your progress can be saved to the cloud.</li>
   <li>We use Google Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging) to understand how the Game is played, fix crashes, tune the Game and send optional notifications.</li>
   <li>We use Google AdMob to show ads, with a consent message for users in the EEA, UK and Switzerland, and Apple's tracking permission on iOS.</li>
+  <li>We use the Meta SDK only to measure our ads on Facebook and Instagram (see <a href="#meta">Meta advertising measurement</a>).</li>
   <li>Purchases are handled by Google Play or the Apple App Store. We never see your payment details.</li>
   <li>We do not sell your personal information.</li>
   <li>You can delete your account in the Game (Settings &rarr; Delete Account), get a copy of your data (Settings &rarr; Request My Data), or ask us by email (see <a href="#delete">section 8</a>).</li>
@@ -88,6 +89,11 @@ Developer: Kruxgen ("we", "us")<br>
     <td>Show, measure and protect ads (including fraud prevention); collect and store your consent choices</td>
   </tr>
   <tr>
+    <td>Meta SDK (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)</td>
+    <td>Advertising ID (Android) or IDFA only if you allow tracking (iOS), basic device information, app installs and launches, a few in-game events, ads shown with their ad revenue, purchases with their price and currency</td>
+    <td>Measure our ads on Facebook and Instagram (see below)</td>
+  </tr>
+  <tr>
     <td>Google Play Billing / Apple App Store (in-app purchases)</td>
     <td>Product, price, currency, order or transaction ID and purchase receipt</td>
     <td>Process purchases, check that a purchase is genuine, restore owned items</td>
@@ -108,7 +114,9 @@ Developer: Kruxgen ("we", "us")<br>
 <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>,
 <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>,
 <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>,
-<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</p>
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>,
+<a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a>.</p>
+<p id="meta"><strong>Meta (Facebook) advertising measurement.</strong> We use the Meta SDK (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.) only to measure our ads on Facebook and Instagram: to learn whether an install came from one of our ads and to improve those ads. When you allow it, the SDK sends Meta your device's advertising identifier (on iOS only if you allow tracking in the App Tracking Transparency prompt), basic device information, app installs and launches, and a few in-game events (finishing the tutorial, reaching certain levels, completing town areas, spending coins, ads shown with their ad revenue, returning to the game on later days, and purchases with their price and currency). We do not use Facebook Login and do not send your name, email or contacts. In the EEA, UK and Switzerland the SDK starts only after you consent in the privacy prompt, and you can withdraw consent at any time in Settings &rarr; Privacy Settings. You can also reset or delete your advertising identifier in your device settings. Meta processes this data under its own policy: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a>.</p>
 <p>We do not sell your personal information and we do not share it with anyone other than these service providers, except where required by law.</p>
 
 <h2>6. Notifications</h2>
@@ -116,8 +124,8 @@ Developer: Kruxgen ("we", "us")<br>
 
 <h2>7. Your choices about ads and tracking</h2>
 <ul>
-  <li><strong>EEA, UK and Switzerland:</strong> you are asked for consent before personalized ads are shown. You can change your choice at any time in <strong>Settings &rarr; Privacy Settings</strong>. If you do not consent, ad-related data is not used for personalization and Firebase Analytics is told not to use data for advertising.</li>
-  <li><strong>iOS:</strong> the Game asks for Apple's tracking permission. If you choose "Ask App Not to Track", the IDFA is not shared with us or with AdMob. You can change this in iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking.</li>
+  <li><strong>EEA, UK and Switzerland:</strong> you are asked for consent before personalized ads are shown. You can change your choice at any time in <strong>Settings &rarr; Privacy Settings</strong>. If you do not consent, ad-related data is not used for personalization and Firebase Analytics is told not to use data for advertising, and the Meta SDK does not start.</li>
+  <li><strong>iOS:</strong> the Game asks for Apple's tracking permission. If you choose "Ask App Not to Track", the IDFA is not shared with us, AdMob or Meta. You can change this in iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking.</li>
   <li><strong>Android:</strong> you can reset or delete your advertising ID in your device settings (Settings &rarr; Privacy &rarr; Ads, or Google &rarr; Ads).</li>
   <li>Rewarded ads are always optional. The "No Ads" purchase removes ads shown between levels.</li>
   <li>Ads are limited to content suitable for general audiences.</li>
